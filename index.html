@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>程序猿的烂漫 By:毅</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--表单层-->
+    <div class="love_div">
+        <!--提示文字-->
+        <h1>输入“520”,我给你惊喜！  Believe Me @毅 </h1>
+        <form onsubmit="return false">
+            <input type="password" name="love_text" class="love_text" placeholder="输入“520”,提交有惊喜哦！">
+            <input type="button" class="love_btn" value="点击提交">
+        </form>
+    </div>
+    <!--背景音乐层（若要修改，直接替换音频地址即可，即src="音频地址"）-->
+    <audio src="http://other.web.rt01.sycdn.kuwo.cn/resource/n1/92/8/1691826509.mp3" autoplay="autoplay" loop="loop" id="audio">
+        浏览器不支持播放此音乐！
+    </audio>
+    <script type="text/javascript" class="autoinsert" src="js/jquery-1.2.6.min.js"></script>
+    <script src="js/snowfall.jquery.js"></script>
+    <script src="js/love.js"></script>
+    <script>
+        $(function(){
+            showFlower();/*加载落花效果*/
+            initImg();
+        })
+    </script>
+</body>
+</html>
