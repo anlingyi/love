@@ -186,7 +186,7 @@ function showName() {
 }
 
 $(function () {
-    var val = getParam('to');
+    var val = getParam('for');
     name = val == null || val.trim().length < 1 ? name : val;
     show();
 });

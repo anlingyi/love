@@ -5,4 +5,4 @@
 ### 预览地址
 * https://xeblog.cn/demo/love/1/
 * https://xeblog.cn/demo/love/2/
-* https://xeblog.cn/demo/love/3/?to=此处为姓名
+* https://xeblog.cn/demo/love/3/?for=此处为姓名
