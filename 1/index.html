@@ -6,28 +6,28 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <!--表单层-->
-    <div class="love_div">
-        <!--提示文字-->
-        <h1>输入“520”,我给你惊喜！ </h1>
-        <form onsubmit="return false">
-            <input type="password" name="love_text" class="love_text" placeholder="输入“520”,提交有惊喜哦！">
-            <input type="button" class="love_btn" value="点击提交">
-        </form>
-    </div>
-    <!--背景音乐层（若要修改，直接替换音频地址即可，即src="音频地址"）-->
-    <audio src="https://oss.xeblog.cn/prod/e02ee808aa904124ad1ee5106eb529ab.mp3" autoplay="autoplay" loop="loop"
-           id="audio">
-        浏览器不支持播放此音乐！
-    </audio>
-    <script type="text/javascript" class="autoinsert" src="js/jquery-1.2.6.min.js"></script>
-    <script src="js/snowfall.jquery.js"></script>
-    <script src="js/love.js"></script>
-    <script>
-        $(function(){
-            showFlower();/*加载落花效果*/
-            initImg();
-        })
+<!--表单层-->
+<div class="love_div">
+    <!--提示文字-->
+    <h1>输入“520”,我给你惊喜！ </h1>
+    <form onsubmit="return false">
+        <input type="password" name="love_text" class="love_text" placeholder="输入“520”,提交有惊喜哦！">
+        <input type="button" class="love_btn" value="点击提交">
+    </form>
+</div>
+<!--背景音乐层（若要修改，直接替换音频地址即可，即src="音频地址"）-->
+<audio autoplay="autoplay" id="bgm" loop="loop"
+       src="https://oss.xeblog.cn/prod/e02ee808aa904124ad1ee5106eb529ab.mp3">
+    浏览器不支持播放此音乐！
+</audio>
+<script type="text/javascript" class="autoinsert" src="js/jquery-1.2.6.min.js"></script>
+<script src="js/snowfall.jquery.js"></script>
+<script src="js/love.js"></script>
+<script>
+    $(function () {
+        showFlower();/*加载落花效果*/
+        initImg();
+    })
     </script>
 </body>
 </html>

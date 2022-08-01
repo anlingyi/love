@@ -80,38 +80,36 @@ function showImg(){
     }
     setTimeout(himg,3500);
 }
+
 //显示背景图片
-function simg(){
-        $(".bgImg").fadeIn(3000,showImg());
+function simg() {
+    $(".bgImg").fadeIn(3000, showImg());
 }
+
 //隐藏背景图片
-function himg(){
+function himg() {
     $(".bgImg").fadeOut(3000);
-    setTimeout(simg,3500);
+    setTimeout(simg, 3500);
 }
+
+function audioAutoPlay() {
+    document.getElementById('bgm').play();
+}
+
 //--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
 document.addEventListener('touchstart', function () {
-    function audioAutoPlay() {
-        var audio = document.getElementById('audio');
-        audio.play();
-    }
     audioAutoPlay();
 });
-//--创建页面监听，等待微信端页面加载完毕 触发音频播放
-document.addEventListener('DOMContentLoaded', function () {
-    function audioAutoPlay() {
-        var audio = document.getElementById('audio');
-        audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
-        }, false);
-    }
+// 点击时
+document.addEventListener('click', function () {
     audioAutoPlay();
 });
+
 //爱心切片图格式
 var heart_img_format = "jpg";
 //爱心切片图前缀
 var heart_img_pre = "1_";
+
 /**
  * 爱心墙
  * 由42个小矩形（长为110px,宽为100px）7x6排列组成
